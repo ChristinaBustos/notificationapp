@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "522810314595",
+    "project_id": "notificationappflutter-3337c",
+    "storage_bucket": "notificationappflutter-3337c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522810314595:android:f6eb6c1745ac6b436d4d56",
+        "android_client_info": {
+          "package_name": "com.example.notificationapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_3xt1jTlAg_-OfuTJ3VTZRLWA5mrphYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
