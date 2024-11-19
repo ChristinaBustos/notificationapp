@@ -9,16 +9,16 @@ Future<void> _firebaseMessagingHandler(RemoteMessage message) async {
 }
 
 const AndroidInitializationSettings initializationSettingsAndroid =
-AndroidInitializationSettings('@mipmap/ic_launcher');
+    AndroidInitializationSettings('@mipmap/ic_launcher');
 final DarwinInitializationSettings initializationSettingsDarwin =
-DarwinInitializationSettings();
+    DarwinInitializationSettings();
 final InitializationSettings initializationSettings = InitializationSettings(
   android: initializationSettingsAndroid,
   iOS: initializationSettingsDarwin,
 );
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-FlutterLocalNotificationsPlugin();
+    FlutterLocalNotificationsPlugin();
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -48,7 +48,8 @@ class _MyAppState extends State<MyApp> {
     );
 
     FirebaseMessaging.onMessage.listen((RemoteMessage remoteMessage) {
-      print("Estoy obteniendo una notificación: ${remoteMessage.notification?.title}");
+      print(
+          "Estoy obteniendo una notificación: ${remoteMessage.notification?.title}");
       flutterLocalNotificationsPlugin.show(
         remoteMessage.hashCode,
         remoteMessage.notification?.title,
